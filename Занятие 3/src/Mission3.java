@@ -6,11 +6,16 @@ public class Mission3
     private static final Scanner scanner = new Scanner(System.in);
     public static void main (String[] args)
     {
-        RandomGameCasino();
-        String [] Words= {"apple", "orange", "lemon", "banana", "apricot", "avocado",
-                "broccoli", "carrot", "cherry", "garlic", "grape", "melon", "leak",
-                "kiwi", "mango", "mushroom", "nut", "olive", "pea", "peanut", "pear",
-                "pepper", "pineapple", "pumpkin", "potato"};
+        System.out.println("Выберите игру: 1- Угадать цифру от 0 до 9; 2- Угадать слово");
+        int input_Game = scanner.nextInt();
+        if (input_Game==1)
+        {
+            RandomGameCasino();
+        }
+        else
+        {
+            RandomGameWord();
+        }
     }
     static void RandomGameCasino() // Угадай число за три попытки.
     {
@@ -51,5 +56,37 @@ public class Mission3
                 }
             }
         }
+    }
+    static void RandomGameWord () //Угадай слово
+    {
+        String [] Words= {"apple", "orange", "lemon", "banana", "apricot", "avocado",
+                "broccoli", "carrot", "cherry", "garlic", "grape", "melon", "leak",
+                "kiwi", "mango", "mushroom", "nut", "olive", "pea", "peanut", "pear",
+                "pepper", "pineapple", "pumpkin", "potato"};
+        int random_IndexOfWord= (int) (Math.random()*(Words.length-1));
+        int Victory=0;
+        while (Victory==0)
+        {
+            System.out.println(System.lineSeparator()+"Введите слово");
+            Scanner in = new Scanner(System.in);
+            String input_Word = in.nextLine();
+            if (input_Word.equals(Words[random_IndexOfWord]))
+            {
+                Victory=1;
+            }
+            else
+            {
+              for(int i=0;i<15;i++)
+              {
+                  if (i<input_Word.length() && i<Words[random_IndexOfWord].length() && input_Word.charAt(i) == Words[random_IndexOfWord].charAt(i))
+                  {
+                      System.out.print(input_Word.charAt(i));
+                  }
+                  else
+                      System.out.print("*");
+              }
+            }
+        }
+        System.out.println("Вы отгадали");
     }
 }
