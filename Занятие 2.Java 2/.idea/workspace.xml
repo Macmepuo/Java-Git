@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8ad5b090-ef1e-4891-a4b7-0f4a07b99d65" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1l621CoGmmZMwcaDgJBAdF2HJ3y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Занятие 2.Java 2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ad5b090-ef1e-4891-a4b7-0f4a07b99d65" name="Default Changelist" comment="" />
+      <created>1606903005953</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606903005953</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="174" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606907192460">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="174" width="1092" height="716" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606907192460" />
+    <state x="285" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1606904877234">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="285" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606904877234" />
+    <state x="275" y="321" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1606907191694">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="275" y="321" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606907191694" />
+    <state width="900" height="270" key="GridCell.Tab.0.bottom" timestamp="1606921778163">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="900" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606921778163" />
+    <state width="900" height="270" key="GridCell.Tab.0.center" timestamp="1606921778163">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="900" height="270" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606921778163" />
+    <state width="900" height="270" key="GridCell.Tab.0.left" timestamp="1606921778163">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="900" height="270" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606921778163" />
+    <state width="900" height="270" key="GridCell.Tab.0.right" timestamp="1606921778163">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="900" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606921778163" />
+    <state x="551" y="139" key="new project wizard" timestamp="1607001590934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="551" y="139" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607001590934" />
+  </component>
+</project>
