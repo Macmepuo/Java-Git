@@ -16,11 +16,11 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
@@ -101,6 +101,7 @@ public class Controller implements Initializable {
             if (socket != null && !socket.isClosed()) {
                 String str = textField.getText();
                 out.writeUTF(str);
+                SaveHistory(str);
                 textField.clear();
                 textField.requestFocus();
             }
@@ -143,6 +144,7 @@ public class Controller implements Initializable {
                             if (str.startsWith("/authok")) {
                                 nickname = str.split(" ")[1];
                                 setAuthorized(true);
+                                loadHistory();
                                 break;
                             }
                         }
@@ -201,4 +203,51 @@ public class Controller implements Initializable {
         }
 
     }
+
+        private void SaveHistory(String str) throws IOException {
+        try {
+            File history = new File("D:\\Java\\Уровень 3\\JavaChatMaven\\history.txt");
+            if (!history.exists()) {
+                history.createNewFile();
+            }
+            else {
+                PrintWriter fileWriter = new PrintWriter(new FileWriter(history, true));
+                BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+                bufferedWriter.write(nickname+": "+str+" \n");
+                bufferedWriter.close();
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void loadHistory() throws IOException {
+        int postHistory = 100;
+        File history = new File("D:\\Java\\Уровень 3\\JavaChatMaven\\history.txt");
+        List<String> historyList = new ArrayList<>();
+        FileInputStream in = new FileInputStream(history);
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(in));
+
+        String temp;
+        while (( temp = bufferedReader.readLine()) != null) {
+            historyList.add(temp);
+        }
+
+        if (historyList.size() > postHistory) {
+            textArea.appendText("Последние 100 сообщений: \n");
+            for (int i = historyList.size() - postHistory; i <= (historyList.size() - 1); i++) {
+                textArea.appendText(historyList.get(i) + " \n");
+            }
+        } else {
+            textArea.appendText("Последние 100 сообщений: \n");
+            for (int i = 0; i < historyList.size(); i++) {
+                textArea.appendText(historyList.get(i) + " \n");
+            }
+        }
+    }
+
+
+
+
 }

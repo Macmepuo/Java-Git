@@ -1,9 +1,9 @@
 package ru.geekbrains.server;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ClientHandler {
     private Server server;
@@ -92,6 +92,7 @@ public class ClientHandler {
                                     sendMsg("Incorrect");
                                 }
                             }
+//
                         } else {
                             server.broadcastMsg(nickname + ": " + str);
                         }
@@ -135,4 +136,6 @@ public class ClientHandler {
     public String getNickname() {
         return nickname;
     }
+
+
 }
